@@ -4,10 +4,12 @@
 \alias{new_meet}
 \title{Abrir template}
 \usage{
-new_meet(nome, data = format(Sys.Date(), "\%Y\%m\%d"))
+new_meet(nome, dir = "reunioes", data = format(Sys.Date(), "\%Y\%m\%d"))
 }
 \arguments{
 \item{nome}{Titulo da reuniao.}
+
+\item{dir}{Pasta onde os arquivos serão salvos.}
 
 \item{data}{data em formato YYYYMMDD. Default data atual.}
 }
