@@ -16,4 +16,5 @@ Imports: magrittr,
     readr,
     rmarkdown,
     shiny,
-    utils
+    utils,
+    rstudioapi
