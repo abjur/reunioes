@@ -11,7 +11,7 @@
 #' @export
 enviar <- function(arq, from = 'jtrecenti@abj.org.br', dests = c('reunioes@abj.org.br')) {
   html_frag <- rmarkdown::html_fragment()
-  arq_html <- rmarkdown::render(arq, output_format = html_frag, quiet = TRUE)
+  arq_html <- rmarkdown::render(arq, output_format = html_frag, quiet = TRUE, encoding = "UTF-8")
   nm <- unlist(stringr::str_split(gsub('\\.Rmd', '', arq), '_'))
   nm <- tools::toTitleCase(paste(nm, collapse = ' '))
   mm <- gmailr::mime() %>%
